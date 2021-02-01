@@ -8,9 +8,12 @@ const theme = createMuiTheme({
 		}
 	},
 	typography: {
-		fontFamily: ['Helvetica', 'bold'],
+		fontFamily: ['Roboto', 'bold'],
 		fontSize: 15
 	},
+	breakpoints: {
+		down: f down(50)
+	}
 });
 
 export default theme;
