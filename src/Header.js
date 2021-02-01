@@ -15,7 +15,7 @@ export default function Header() {
 				<Pause ms={500} />
 				<SmashEffect />
 				<br />
-				{'Space Escape!'}
+				{'SPACE ESCAPE!'}
 			</WindupChildren>
 		</Typography>
 	);
