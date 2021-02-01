@@ -1,11 +1,10 @@
 import { useContext } from 'react';
 import { WindupChildren, Effect, Pause } from 'windups';
-import { SFXContext } from '../pages';
+// import { useSFXContext } from './context';
 import { Typography } from '@material-ui/core';
 import SmashEffect from './SmashEffect';
 
 export default function Header() {
-	const smash = useContext(SFXContext);
 	return (
 		<Typography variant='h2' align='center'>
 			<WindupChildren>
