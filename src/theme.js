@@ -11,10 +11,6 @@ const theme = createMuiTheme({
 		fontFamily: ['Roboto', 'bold'],
 		fontSize: 15
 	},
-	import { positions } from '@material-ui/system';
-		position: "absolute"
-		top: 30
-	},
 });
 
 export default theme;
