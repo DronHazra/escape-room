@@ -4,8 +4,8 @@ const theme = createMuiTheme({
 	palette: {
 		type: 'dark',
 		background: {
-			default: "#264653"
-		}
+			default: '#050614',
+		},
 	},
 	typography: {
 		fontFamily: ['Roboto Mono', 'monospace'],
