@@ -57,3 +57,27 @@ export function SFXWrapper({ children }) {
 		</SFXContext.Provider>
 	);
 }
+
+export const DialogContext = createContext({
+	currentBlock: 0,
+	proceed: () => {},
+});
+
+export function DialogWrapper({ children }) {
+	const [currentBlock, setCurrentBlock] = useState(0);
+	const proceed = useCallback(() => {
+		console.log(currentBlock);
+		const newValue = currentBlock + 1;
+		setCurrentBlock(newValue);
+	}, [currentBlock]);
+	return (
+		<DialogContext.Provider
+			value={{
+				currentBlock: currentBlock,
+				proceed: proceed,
+			}}
+		>
+			{children}
+		</DialogContext.Provider>
+	);
+}
