@@ -19,7 +19,7 @@ export default function TextCard({
 	const { isActive, proceed } = useContext(DialogChildContext);
 	const [finished, setFinished] = useState(false);
 	useEffect(() => {
-		if (finished && canProceed && isActive) {
+		if (finished && canProceed && isActive && needsInput) {
 			proceed();
 		}
 	}, [canProceed, finished]);
