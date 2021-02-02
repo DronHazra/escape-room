@@ -9,10 +9,12 @@
 	},
 	"dependencies": {
 		"@material-ui/core": "^4.11.3",
+		"@rehooks/component-size": "^1.0.3",
 		"@rooks/use-key": "^4.8.0",
 		"next": "^10.0.0",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
+		"react-intersection-observer": "^8.31.0",
 		"windups": "^1.1.6"
 	}
 }
