@@ -1,37 +1,21 @@
-import {
-	Button,
-	Container,
-	Grid,
-	makeStyles,
-	Typography,
-} from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import { useState, useContext } from 'react';
 import { OnChar, Pause, Pace } from 'windups';
 import TextCard from '../../src/clues/TextCard';
-import { DialogContext } from '../../src/context';
 import Dialog from '../../src/Dialog';
-import Header from '../../src/Header';
-import SmashEffect from '../../src/SmashEffect';
 import { SFXContext } from '../../src/context';
 
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
 };
 
-const useStyles = makeStyles({
-	image: {
-		objectFit: 'scale-down',
-	},
-});
-
-export default function CryptographerPilot() {
+export default function Dlul() {
 	const correctCode = btoa('fries bread');
+	const [codeValue, setCodeValue] = useState('');
 	const correctClue1 = btoa('orion');
 	const [clue1Value, setClue1Value] = useState(''); // 000 is a placeholder, i'll calc it once we have it
 	const [clue2Value, setClue2Value] = useState('');
 	const correctClue2 = btoa('hyperspace activate');
-	const [clue3Value, setClue3Value] = useState('');
-	const correctClue3 = btoa('194966');
 	const smash = useContext(SFXContext);
 	return (
 		<Container maxWidth='md'>

@@ -88,7 +88,7 @@ export default function CryptographerPilot() {
 				<TextCard>
 					Nice. We were able to get things sorted out. What a great
 					cryptographer and pilot we have! Best go{' '}
-					<Button component={Link} href='../dlul'>
+					<Button component={Link} href='../final/dlul'>
 						meet up with your teammates now
 					</Button>
 					, your code is cheese.

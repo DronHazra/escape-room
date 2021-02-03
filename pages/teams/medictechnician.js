@@ -59,7 +59,11 @@ export default function MedicTechnician() {
 					"pointer carrot", where pointer is the medic code and carrot
 					is the technician code. You're gonna have to work together.
 				</TextCard>
-				<TextCard needsInput answerCallback={i => setClue1Value(i)}>
+				<TextCard
+					needsInput
+					answerCallback={i => setClue1Value(i)}
+					canProceed={clue1Value === correctClue1}
+				>
 					Examine the pipes to see where the major gas leak sites are,
 					they should be marked with a blob of colour. Hurry! <br />
 					<Pace getPace={() => 500}>...</Pace>
@@ -77,7 +81,7 @@ export default function MedicTechnician() {
 					Phew! That was a close one, good thing we acted quickly
 					before it got worse. Your access codes have changed: they
 					are now bread.{' '}
-					<Button component={Link} href='/dlul'>
+					<Button component={Link} href='../final/dlul'>
 						Go meet up with your other teammates!
 					</Button>
 				</TextCard>
