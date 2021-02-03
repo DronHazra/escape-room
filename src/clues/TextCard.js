@@ -10,6 +10,10 @@ import React, { useContext, useRef, useState, useEffect } from 'react';
 import { WindupChildren } from 'windups';
 import { DialogChildContext } from '../Dialog';
 
+const btoa = input_string => {
+	return Buffer.from(input_string).toString('base64');
+};
+
 export default function TextCard({
 	children,
 	needsInput,
@@ -25,7 +29,7 @@ export default function TextCard({
 	}, [canProceed, finished]);
 	const textInput = (
 		<TextField
-			onChange={event => answerCallback(event.target.value)}
+			onChange={event => answerCallback(btoa(event.target.value))}
 			autoFocus
 			error={!canProceed}
 		/>

@@ -32,7 +32,7 @@ export default function Index() {
 				<TextCard
 					needsInput={true}
 					answerCallback={input_string => {
-						setPayCode(btoa(input_string));
+						setPayCode(input_string);
 					}}
 					canProceed={paymentCode === correctCode}
 				>
@@ -52,9 +52,7 @@ export default function Index() {
 				</TextCard>
 				<TextCard
 					needsInput={true}
-					answerCallback={input_string =>
-						setCardInput(btoa(input_string))
-					}
+					answerCallback={input_string => setCardInput(input_string)}
 					canProceed={cardInput === correctCard}
 				>
 					Now... we’re set to blast off soon, but you seem to be

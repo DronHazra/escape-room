@@ -48,7 +48,7 @@ export default function Medic() {
 				<TextCard
 					needsInput
 					answerCallback={input_string => {
-						setClue1Value(btoa(input_string));
+						setClue1Value(input_string);
 					}}
 					canProceed={clue1Value === correctCode}
 				>
@@ -92,9 +92,7 @@ export default function Medic() {
 				</TextCard>
 				<TextCard
 					needsInput
-					answerCallback={input_string =>
-						setClue2Value(btoa(input_string))
-					}
+					answerCallback={input_string => setClue2Value(input_string)}
 					canProceed={clue2Value === correctClue2}
 				>
 					X-Rays are a major part of a medic’s work life — how else
@@ -182,9 +180,7 @@ export default function Medic() {
 				</TextCard>
 				<TextCard
 					needsInput
-					answerCallback={input_string =>
-						setClue3Value(btoa(input_string))
-					}
+					answerCallback={input_string => setClue3Value(input_string)}
 					canProceed={clue3Value === correctClue3}
 				>
 					<strong>
