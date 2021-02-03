@@ -14,7 +14,7 @@ export default function TextCard({
 	children,
 	needsInput,
 	answerCallback,
-	canProceed = true,
+	canProceed,
 }) {
 	const { isActive, proceed } = useContext(DialogChildContext);
 	const [finished, setFinished] = useState(false);
@@ -43,7 +43,7 @@ export default function TextCard({
 				</Typography>
 			</CardContent>
 			<CardActions>
-				{needsInput ? (
+				{needsInput || false ? (
 					finished ? (
 						textInput
 					) : (
