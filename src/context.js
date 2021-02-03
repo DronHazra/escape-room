@@ -66,7 +66,6 @@ export const DialogContext = createContext({
 export function DialogWrapper({ children }) {
 	const [currentBlock, setCurrentBlock] = useState(0);
 	const proceed = useCallback(() => {
-		console.log(currentBlock);
 		const newValue = currentBlock + 1;
 		setCurrentBlock(newValue);
 	}, [currentBlock]);
@@ -79,5 +78,27 @@ export function DialogWrapper({ children }) {
 		>
 			{children}
 		</DialogContext.Provider>
+	);
+}
+export const HintContext = createContext({
+	numHints: 0,
+	increment: () => {},
+});
+export function HintWrapper({ children }) {
+	const [numHints, setNumHints] = useState(0);
+	const increment = useCallback(() => {
+		const newValue = numHints + 1;
+		setNumHints(newValue);
+		console.log(newValue);
+	}, [numHints]);
+	return (
+		<HintContext.Provider
+			value={{
+				numHints: numHints,
+				increment: increment,
+			}}
+		>
+			{children}
+		</HintContext.Provider>
 	);
 }
