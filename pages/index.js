@@ -7,7 +7,7 @@ import Dialog from '../src/Dialog';
 import Header from '../src/Header';
 import SmashEffect from '../src/SmashEffect';
 import { SFXContext } from '../src/context';
-import { Link } from 'next/link';
+import Link from '../src/Link';
 
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
@@ -75,14 +75,15 @@ export default function Index() {
 				<TextCard needsInput={false}>
 					Congratulations! <Pause ms={300} /> The ship will take off
 					in ... <br />
-					<Pace getPace={char => (char === ' ' ? 1000 : 40)}>
+					<Pace getPace={char => (char === ' ' ? 500 : 40)}>
 						Five! <br />
 						Four! <br />
 						Three! <br />
 						Two! <br />
-						One! <br />
+						One!{'  '}
+						<br />
 					</Pace>
-					<OnChar fn={smash}>{'BLASTOFF!!!'}</OnChar>
+					<OnChar fn={smash}>{'BLASTOFF!!!!'}</OnChar>
 					<Pause ms={500} />
 				</TextCard>
 				<TextCard needsInput={false}>
@@ -107,16 +108,23 @@ export default function Index() {
 					<Pace getPace={() => 100}>I don’t feel so good.</Pace> My
 					sensors indicate we hit an asteroid. You’ll need to fix the
 					engine in order to get back in motion. It's time for you to
-					speacialize! <br />
-					<Pause ms={500} />
-					<Link href='/roles/medic'>Medic</Link> <br />
-					<Pause ms={500} />
-					<Link href='/roles/cryptographer'>Cryptographer</Link>{' '}
+					specialize!
 					<br />
-					<Pause ms={500} />
-					<Link href='/roles/Pilot'>Pilot</Link> <br />
-					<Pause ms={500} />
-					<Link href='/roles/Technician'>Technician</Link>
+					<Button component={Link} href='roles/medic'>
+						Medic
+					</Button>
+					<br />
+					<Button component={Link} href='roles/cryptographer'>
+						Cryptographer
+					</Button>
+					<br />
+					<Button component={Link} href='roles/technician'>
+						Technician
+					</Button>
+					<br />
+					<Button component={Link} href='roles/pilot'>
+						Pilot
+					</Button>
 				</TextCard>
 			</Dialog>
 		</Container>

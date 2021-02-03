@@ -14,6 +14,7 @@ import Dialog from '../../src/Dialog';
 import Header from '../../src/Header';
 import SmashEffect from '../../src/SmashEffect';
 import { SFXContext } from '../../src/context';
+import Link from '../../src/Link';
 
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
@@ -43,8 +44,8 @@ export default function Pilot() {
 				</TextCard>
 				<TextCard>
 					So lately I've been <Pace getPace={() => 500}>...</Pace>{' '}
-					feeling. Scary, right! I'm a robot! Do you mind if I get
-					some things off my chest?
+					feeling. <Pause ms={1000} /> Scary, right? I'm a robot! Do
+					you mind if I get some things off my chest?
 				</TextCard>
 				<TextCard
 					needsInput
@@ -114,6 +115,9 @@ export default function Pilot() {
 				<TextCard>
 					Great. Let’s head over to the pods and get out of here as
 					soon as we can.
+					<Button component={Link} href='../teams/cryptographerpilot'>
+						Your access code is: tomato
+					</Button>
 				</TextCard>
 			</Dialog>
 		</Container>

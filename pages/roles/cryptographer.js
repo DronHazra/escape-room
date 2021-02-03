@@ -14,7 +14,7 @@ import Dialog from '../../src/Dialog';
 import Header from '../../src/Header';
 import SmashEffect from '../../src/SmashEffect';
 import { SFXContext } from '../../src/context';
-
+import Link from '../../src/Link';
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
 };
@@ -80,7 +80,13 @@ export default function Cryptographer() {
 					That's a pretty sky, can you figure out what's written in
 					the stars?
 				</TextCard>
-				<TextCard>Awesome. You're rad.</TextCard>
+				<TextCard>
+					Awesome. You're rad. Meet up with the Pilot near the pods
+					now,{' '}
+					<Button component={Link} href='../teams/cryptographypilot'>
+						your access code is: lettuce.
+					</Button>
+				</TextCard>
 			</Dialog>
 		</Container>
 	);

@@ -13,7 +13,7 @@ import Dialog from '../../src/Dialog';
 import Header from '../../src/Header';
 import SmashEffect from '../../src/SmashEffect';
 import { SFXContext } from '../../src/context';
-
+import Link from '../../src/Link';
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
 };
@@ -51,7 +51,7 @@ export default function Technician() {
 				>
 					Our manuals have been corrupted! Our lives hang in the
 					balance. Find the missing words, take the first letters and
-					unscramble them.
+					unscramble them. <br />
 					<Pause ms={1000} />
 					According to all known 52t0hewiohoe of 09238f07h8, there is
 					no way that a bee should be able to fly. Its wings are too
@@ -79,7 +79,15 @@ export default function Technician() {
 						Radiation Logs (banger!)
 					</Button>
 				</TextCard>
-				<TextCard>Awesome!</TextCard>
+				<TextCard>
+					Do I hear something? Better go check it out. Your access
+					code is mustard. <br />
+					<Pause ms={500} />
+					<Button component={Link} href='../teams/medictechnician'>
+						uh oh.
+					</Button>
+					<Pause ms={500} />
+				</TextCard>
 			</Dialog>
 		</Container>
 	);

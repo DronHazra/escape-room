@@ -13,6 +13,7 @@ import Dialog from '../../src/Dialog';
 import Header from '../../src/Header';
 import SmashEffect from '../../src/SmashEffect';
 import { SFXContext } from '../../src/context';
+import Link from '../../src/Link';
 
 const btoa = input_string => {
 	return Buffer.from(input_string).toString('base64');
@@ -216,6 +217,15 @@ export default function Medic() {
 					other crewmates are done with their own tasks, unless
 					they’re waiting for you, and if that’s the case then
 					<OnChar fn={smash}>HURRY UP!!</OnChar>
+				</TextCard>
+				<TextCard>
+					Do I hear something? Better go check it out. Your access
+					code is mayonnaise. <br />
+					<Pause ms={500} />
+					<Button component={Link} href='../teams/medictechnician'>
+						uh oh.
+					</Button>
+					<Pause ms={500} />
 				</TextCard>
 			</Dialog>
 		</Container>
