@@ -28,7 +28,9 @@ export default function MyApp(props) {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<SFXWrapper>
-					<Component {...pageProps} />
+					<Container maxWidth='md'>
+						<Component {...pageProps} />
+					</Container>
 				</SFXWrapper>
 			</ThemeProvider>
 		</Fragment>

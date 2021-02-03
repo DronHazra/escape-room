@@ -37,55 +37,53 @@ export default function MedicTechnician() {
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
-			<Dialog>
-				<TextCard>
-					Uh oh… do you smell that? This doesn’t feel good at all...
-				</TextCard>
-				<TextCard>
-					I don’t think it’s because someone forgot to flush the
-					toilet — this smells like a gas leak! Quick! Check the pipes
-					on this spaceship, I think some of them are broken and
-					you’ll need to fix them ASAP. If we don’t do something soon,
-					the lives of your crewmates may be in danger...
-				</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={input_string => setCodeValue(input_string)}
-					canProceed={codeValue === correctCode}
+		<Dialog>
+			<TextCard>
+				Uh oh… do you smell that? This doesn’t feel good at all...
+			</TextCard>
+			<TextCard>
+				I don’t think it’s because someone forgot to flush the toilet —
+				this smells like a gas leak! Quick! Check the pipes on this
+				spaceship, I think some of them are broken and you’ll need to
+				fix them ASAP. If we don’t do something soon, the lives of your
+				crewmates may be in danger...
+			</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={input_string => setCodeValue(input_string)}
+				canProceed={codeValue === correctCode}
+			>
+				Medic! Technician! Put in your access codes so I can give you
+				the information. Here's what it might look like: "pointer
+				carrot", where pointer is the medic code and carrot is the
+				technician code. You're gonna have to work together.
+			</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={i => setClue1Value(i)}
+				canProceed={clue1Value === correctClue1}
+			>
+				Examine the pipes to see where the major gas leak sites are,
+				they should be marked with a blob of colour. Hurry! <br />
+				<Pace getPace={() => 500}>...</Pace>
+				<SmashEffect />
+				Oh no, I haven't sent the files to you! Here they are:
+				<br />
+				<Button
+					href='https://drive.google.com/drive/folders/1zxfbMH3sjbqndVJ9YvHLpcmN4h157U1v?usp=sharing'
+					target='_blank'
 				>
-					Medic! Technician! Put in your access codes so I can give
-					you the information. Here's what it might look like:
-					"pointer carrot", where pointer is the medic code and carrot
-					is the technician code. You're gonna have to work together.
-				</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={i => setClue1Value(i)}
-					canProceed={clue1Value === correctClue1}
-				>
-					Examine the pipes to see where the major gas leak sites are,
-					they should be marked with a blob of colour. Hurry! <br />
-					<Pace getPace={() => 500}>...</Pace>
-					<SmashEffect />
-					Oh no, I haven't sent the files to you! Here they are:
-					<br />
-					<Button
-						href='https://drive.google.com/drive/folders/1zxfbMH3sjbqndVJ9YvHLpcmN4h157U1v?usp=sharing'
-						target='_blank'
-					>
-						Gas Leak Analysis
-					</Button>
-				</TextCard>
-				<TextCard>
-					Phew! That was a close one, good thing we acted quickly
-					before it got worse. Your access codes have changed: they
-					are now bread.{' '}
-					<Button component={Link} href='../final/dlul'>
-						Go meet up with your other teammates!
-					</Button>
-				</TextCard>
-			</Dialog>
-		</Container>
+					Gas Leak Analysis
+				</Button>
+			</TextCard>
+			<TextCard>
+				Phew! That was a close one, good thing we acted quickly before
+				it got worse. Your access codes have changed: they are now
+				bread.{' '}
+				<Button component={Link} href='../final/dlul'>
+					Go meet up with your other teammates!
+				</Button>
+			</TextCard>
+		</Dialog>
 	);
 }

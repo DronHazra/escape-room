@@ -34,7 +34,7 @@ export default function Cryptographer() {
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
+		<>
 			<Typography variant='h2'>Cryptographer</Typography>
 			<Dialog>
 				<TextCard>
@@ -88,6 +88,6 @@ export default function Cryptographer() {
 					</Button>
 				</TextCard>
 			</Dialog>
-		</Container>
+		</>
 	);
 }

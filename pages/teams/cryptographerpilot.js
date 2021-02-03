@@ -35,65 +35,63 @@ export default function CryptographerPilot() {
 	const correctClue3 = btoa('194966');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
-			<Dialog>
-				<TextCard>
-					Phew, a group of friendly aliens think your pilot is hot,
-					and decides to try to help them. I dont really understand
-					them, but maybe you two could figure it out?
-				</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={input_string => setCodeValue(input_string)}
-					canProceed={codeValue === correctCode}
+		<Dialog>
+			<TextCard>
+				Phew, a group of friendly aliens think your pilot is hot, and
+				decides to try to help them. I dont really understand them, but
+				maybe you two could figure it out?
+			</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={input_string => setCodeValue(input_string)}
+				canProceed={codeValue === correctCode}
+			>
+				Put in your access codes so I can give you the messages. Here's
+				what it might look like: "pointer carrot", where pointer is the
+				cryptographer code and carrot is the pilot code. You're gonna
+				have to work together:)
+			</TextCard>
+			<TextCard>
+				Here's what they sent, can you figure it out? <br />
+				<Pause ms={500} />
+				<Button
+					href='https://docs.google.com/document/d/11L7afYXDCctLolKY-tFaW_lRiTxs76d8nvWtwQ6p8Mk/edit?usp=sharing'
+					target='_blank'
 				>
-					Put in your access codes so I can give you the messages.
-					Here's what it might look like: "pointer carrot", where
-					pointer is the cryptographer code and carrot is the pilot
-					code. You're gonna have to work together:)
-				</TextCard>
-				<TextCard>
-					Here's what they sent, can you figure it out? <br />
-					<Pause ms={500} />
-					<Button
-						href='https://docs.google.com/document/d/11L7afYXDCctLolKY-tFaW_lRiTxs76d8nvWtwQ6p8Mk/edit?usp=sharing'
-						target='_blank'
-					>
-						kinda cute ngl
-					</Button>
-				</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={input_string => setClue1Value(input_string)}
-					canProceed={correctClue1 === clue1Value}
-				>
-					The first one's to the pilot, what do you think it means?
-				</TextCard>
-				<TextCard>Nice.</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={input_string => setClue2Value(input_string)}
-					canProceed={correctClue2 === clue2Value}
-				>
-					The next couple seem to be connected somehow... what does
-					this one mean?
-				</TextCard>
-				<TextCard
-					needsInput
-					answerCallback={input_string => setClue3Value(input_string)}
-					canProceed={correctClue3 === clue3Value}
-				>
-					What a strange communication style!
-				</TextCard>
-				<TextCard>
-					Nice. We were able to get things sorted out. What a great
-					cryptographer and pilot we have! Best go{' '}
-					<Button component={Link} href='../final/dlul'>
-						meet up with your teammates now
-					</Button>
-					, your code is cheese.
-				</TextCard>
-			</Dialog>
-		</Container>
+					kinda cute ngl
+				</Button>
+			</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={input_string => setClue1Value(input_string)}
+				canProceed={correctClue1 === clue1Value}
+			>
+				The first one's to the pilot, what do you think it means?
+			</TextCard>
+			<TextCard>Nice.</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={input_string => setClue2Value(input_string)}
+				canProceed={correctClue2 === clue2Value}
+			>
+				The next couple seem to be connected somehow... what does this
+				one mean?
+			</TextCard>
+			<TextCard
+				needsInput
+				answerCallback={input_string => setClue3Value(input_string)}
+				canProceed={correctClue3 === clue3Value}
+			>
+				What a strange communication style!
+			</TextCard>
+			<TextCard>
+				Nice. We were able to get things sorted out. What a great
+				cryptographer and pilot we have! Best go{' '}
+				<Button component={Link} href='../final/dlul'>
+					meet up with your teammates now
+				</Button>
+				, your code is cheese.
+			</TextCard>
+		</Dialog>
 	);
 }

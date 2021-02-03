@@ -35,7 +35,7 @@ export default function Pilot() {
 	const correctClue3 = btoa('pods');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
+		<>
 			<Typography variant='h2'>Pilot</Typography>
 			<Dialog>
 				<TextCard>
@@ -120,6 +120,6 @@ export default function Pilot() {
 					</Button>
 				</TextCard>
 			</Dialog>
-		</Container>
+		</>
 	);
 }

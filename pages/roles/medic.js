@@ -34,7 +34,7 @@ export default function Medic() {
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
+		<>
 			<Typography variant='h2'>Medic</Typography>
 			<Dialog>
 				<TextCard>
@@ -228,6 +228,6 @@ export default function Medic() {
 					<Pause ms={500} />
 				</TextCard>
 			</Dialog>
-		</Container>
+		</>
 	);
 }

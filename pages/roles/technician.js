@@ -33,7 +33,7 @@ export default function Technician() {
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
 	return (
-		<Container maxWidth='md'>
+		<>
 			<Typography variant='h2'>Technician</Typography>
 			<Dialog>
 				<TextCard>
@@ -89,6 +89,6 @@ export default function Technician() {
 					<Pause ms={500} />
 				</TextCard>
 			</Dialog>
-		</Container>
+		</>
 	);
 }
