@@ -215,12 +215,13 @@ export default function Medic() {
 					Amazing! You ARE one of the best medics I’ve come across so
 					far — good job :D Now just hang tight and wait until the
 					other crewmates are done with their own tasks, unless
-					they’re waiting for you, and if that’s the case then
+					they’re waiting for you, and if that’s the case then{' '}
 					<OnChar fn={smash}>HURRY UP!!</OnChar>
 				</TextCard>
 				<TextCard>
-					Do I hear something? Better go check it out. Your access
-					code is mayonnaise. <br />
+					Do I hear something? Better go check it out.
+					<strong>Your accesscode is mayonnaise.</strong>
+					<br />
 					<Pause ms={500} />
 					<Button component={Link} href='../teams/medictechnician'>
 						uh oh.
