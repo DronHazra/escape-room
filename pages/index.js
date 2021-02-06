@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 export default function Index() {
 	const correctCode = Buffer.from('yum').toString('base64');
 	const [paymentCode, setPayCode] = useState(''); // 000 is a placeholder, i'll calc it once we have it
-	const correctCard = Buffer.from('3468QA').toString('base64');
+	const correctCard = Buffer.from('3468qa').toString('base64');
 	const [cardInput, setCardInput] = useState('');
 	const smash = useContext(SFXContext);
 	return (
