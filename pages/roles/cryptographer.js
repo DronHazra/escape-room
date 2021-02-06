@@ -83,7 +83,7 @@ export default function Cryptographer() {
 				<TextCard>
 					Awesome. You're rad. Meet up with the Pilot near the pods
 					now,{' '}
-					<Button component={Link} href='../teams/cryptographypilot'>
+					<Button component={Link} href='../teams/cryptographerpilot'>
 						your access code is: lettuce.
 					</Button>
 				</TextCard>

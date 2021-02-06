@@ -28,7 +28,7 @@ export default function Technician() {
 	const correctClue1 = btoa('galactic');
 	const [clue1Value, setClue1Value] = useState(''); // 000 is a placeholder, i'll calc it once we have it
 	const [clue2Value, setClue2Value] = useState('');
-	const correctClue2 = btoa('bed, cupcake, scissors');
+	const correctClue2 = btoa('alpha centauri, betelgeuse, pleiades');
 	const [clue3Value, setClue3Value] = useState('');
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
@@ -77,6 +77,15 @@ export default function Technician() {
 						target='_blank'
 					>
 						Radiation Logs (banger!)
+					</Button>
+					<br />
+					You might also need this:
+					<br />
+					<Button
+						href='https://academo.org/demos/spectrum-analyzer/'
+						target='_blank'
+					>
+						A Useful Tool
 					</Button>
 				</TextCard>
 				<TextCard>

@@ -26,10 +26,10 @@ const useStyles = makeStyles({
 });
 
 export default function Medic() {
-	const correctCode = btoa('temperature, exercise, soup, milk, home, apple');
+	const correctCode = btoa('thermometer, exercise, soup, milk, photo, apple');
 	const [clue1Value, setClue1Value] = useState(''); // 000 is a placeholder, i'll calc it once we have it
 	const [clue2Value, setClue2Value] = useState('');
-	const correctClue2 = btoa('bed, cupcake, scissors');
+	const correctClue2 = btoa('cupcake, scissors, sleep');
 	const [clue3Value, setClue3Value] = useState('');
 	const correctClue3 = btoa('Focus on the horizon');
 	const smash = useContext(SFXContext);
@@ -204,7 +204,7 @@ export default function Medic() {
 					<br />
 					<Pause ms={500} />
 					<Button
-						href='https://drive.google.com/drive/folders/1m-kKMe6bYkgHFhHCq6Rn3pbo5KYBKKYl?usp=sharing'
+						href='https://drive.google.com/drive/folders/1WUqarM5JHjEPF36rwTNiMdV1fRnzYgi7?usp=sharing'
 						target='_blank'
 					>
 						We have a lot of manuals.

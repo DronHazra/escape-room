@@ -52,27 +52,17 @@ export default function Pilot() {
 					answerCallback={input_string => setClue1Value(input_string)}
 					canProceed={correctCode === clue1Value}
 				>
-					All m<strong>y</strong> life I've felt dramAti
-					<strong>c</strong>ally difF<strong>e</strong>rent from
-					everyOne else. I don't see the HuMan r<strong>a</strong>ce
-					as my own, I don't see this beAuti<strong>f</strong>ul pla
-					<strong>n</strong>et as my own /<strong>/</strong> I feEl
-					like an orphan <strong>w</strong>ould feel not knOwing who
-					their paRents were. I tell you what, and this may souNd
-					really Corny, but the onLy ti<strong>m</strong>e I feel like
-					I'm hoMe is wHen I sEe spAce, watch documentaries aboUt
-					space, or watch fiLms about sPace<strong>.</strong>..
-					ANYTHING TO DO WITH SPACE! S<strong>p</strong>ace is
-					probably the thing I love <strong>m</strong>oSt in life
-					bEsides life itself, the idEa aNd the <strong>t</strong>
-					hoUght of how much there is out there, the vast amoUnt of
-					poS<strong>s</strong>ibiLit<strong>i</strong>es there is.
-					Where we come from, where I come frOm. It literally brings a
-					tear to my eYe when I laY <strong>o</strong>utsidE in the
-					pitch <strong>b</strong>lac<strong>k</strong> and focus on
-					the reality of life, looking up at the <strong>56</strong>{' '}
-					stars knOWing that there could be life orbitIng thEm. <br />
-					12 4 15 14 3 18 16 6 11 2 17 10 7 19 1 9 20 5 21 13 8
+					So lately I've been <Pace getPace={() => 500}>...</Pace>{' '}
+					feeling. <Pause ms={1000} /> Scary, right? I'm a robot! Do
+					you mind if I get some things off my chest?
+					<br />
+					<Pause ms={500} />
+					<Button
+						href='https://drive.google.com/file/d/1h8C5KeSD79l5RrsY4rqhaFlVdat7_Vq6/view'
+						target='_blank'
+					>
+						feelings:(
+					</Button>
 				</TextCard>
 				<TextCard>
 					Well done. A good pilot must be able to understand what we

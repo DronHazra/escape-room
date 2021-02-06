@@ -41,11 +41,17 @@ export default function Index() {
 				Hey! I’m your ship’s computer! My name is Program 5000, but you
 				can call me Rammy. I’ll help you throughout this journey.
 				Whenever you are stumped, I will be here to give you hints, you
-				just need to ask by typing the key "~". <br />
-				<Pause ms={500} />
+				just need to ask by clicking that button down there. <br />
+				<Pause ms={1000} />
 				<SmashEffect />
 				HOWEVER! Bear in mind that each time you ask for a hint, 3
 				minutes will be added to your total time.
+			</TextCard>
+			<TextCard>
+				Also, if there are multiple answers to a clue, make sure to
+				remember your commas and spaces. We had a case here at WASA one
+				time where a hyphen cost us like 3 billion dollars... we'd
+				rather not repeat that:)
 			</TextCard>
 			<TextCard
 				needsInput={true}
@@ -58,7 +64,7 @@ export default function Index() {
 				<br />
 				<Pause ms={200} />
 				<Button
-					href='https://drive.google.com/file/d/1sMtxXtTL6rXjp9wg8YXAikFW9AN2Unou/view?usp=sharing'
+					href='https://drive.google.com/file/d/1hXKosz1ha9ErXuakFF9Eq8xodmHA8WZo/view?usp=sharing'
 					target='_blank'
 					variant='filled'
 				>

@@ -1,4 +1,4 @@
-import { Container } from '@material-ui/core';
+import { Button, Container } from '@material-ui/core';
 import { useState, useContext } from 'react';
 import { OnChar, Pause, Pace } from 'windups';
 import TextCard from '../../src/clues/TextCard';
@@ -10,7 +10,7 @@ const btoa = input_string => {
 };
 
 export default function Dlul() {
-	const correctCode = btoa('fries bread');
+	const correctCode = btoa('cheese bread');
 	const [codeValue, setCodeValue] = useState('');
 	const correctClue1 = btoa('orion');
 	const [clue1Value, setClue1Value] = useState(''); // 000 is a placeholder, i'll calc it once we have it
@@ -63,7 +63,13 @@ export default function Dlul() {
 				to find the right command to get your engines firing before you
 				can enter hyperspace. In the following clue you’ll find the
 				remaining letters form a two-word keyphrase that will ignite the
-				engine! You're almost there!
+				engine! You're almost there! <br />
+				<Button
+					href='https://media.discordapp.net/attachments/506257844287569920/804111753599254609/unknown.png?width=855&height=702'
+					target='_blank'
+				>
+					i can taste it!
+				</Button>
 			</TextCard>
 			<TextCard>
 				Oh! <Pause ms={1000} /> Looks like headquarters is ready, so get
