@@ -84,7 +84,7 @@ export default function Cryptographer() {
 					Awesome. You're rad. Meet up with the Pilot near the pods
 					now,{' '}
 					<Button component={Link} href='../teams/cryptographerpilot'>
-						your access code is: lettuce.
+						your access code is: lettuce
 					</Button>
 				</TextCard>
 			</Dialog>

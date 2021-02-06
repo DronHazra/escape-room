@@ -22,7 +22,7 @@ export default function Dlul() {
 			<TextCard>
 				Your engine is primed, your passengers are healthy, your ship’s
 				navigation has been set, and you’ve scored a date with an alien
-				cutie {'\uF618'}
+				cutie {'<3'}
 			</TextCard>
 			<TextCard
 				needsInput
