@@ -43,7 +43,8 @@ export default function MyApp(props) {
 							<Fab
 								variant='extended'
 								component={Link}
-								href='/hints'
+								href='https://forms.gle/TNMcfJcDgWsGZd339'
+								target='_blank'
 								className={classes.fab}
 							>
 								Hint
