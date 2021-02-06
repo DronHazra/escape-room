@@ -29,7 +29,9 @@ export default function TextCard({
 	}, [canProceed, finished]);
 	const textInput = (
 		<TextField
-			onChange={event => answerCallback(btoa(event.target.value))}
+			onChange={event =>
+				answerCallback(btoa(event.target.value.toLowerCase()))
+			}
 			autoFocus
 			error={!canProceed}
 		/>
