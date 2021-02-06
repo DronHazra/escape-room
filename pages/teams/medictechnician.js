@@ -78,10 +78,10 @@ export default function MedicTechnician() {
 			</TextCard>
 			<TextCard>
 				Phew! That was a close one, good thing we acted quickly before
-				it got worse. Your access codes have changed: they are now
-				bread.{' '}
+				it got worse. <br />
 				<Button component={Link} href='../final/dlul'>
-					Go meet up with your other teammates!
+					Go meet up with your other teammates! Your access codes are
+					now bread.
 				</Button>
 			</TextCard>
 		</Dialog>
