@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 });
 
 export default function Medic() {
-	const correctCode = btoa('thermometer, exercise, soup, milk, photo, apple');
+	const correctCode = btoa('temperature, exercise, soup, milk, home, apple');
 	const [clue1Value, setClue1Value] = useState(''); // 000 is a placeholder, i'll calc it once we have it
 	const [clue2Value, setClue2Value] = useState('');
 	const correctClue2 = btoa('cupcake, scissors, sleep');
