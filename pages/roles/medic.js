@@ -219,8 +219,8 @@ export default function Medic() {
 					<OnChar fn={smash}>HURRY UP!!</OnChar>
 				</TextCard>
 				<TextCard>
-					Do I hear something? Better go check it out.
-					<strong>Your accesscode is mayonnaise.</strong>
+					Do I hear something? Better go check it out.{' '}
+					<strong>Your access code is mayonnaise.</strong>
 					<br />
 					<Pause ms={500} />
 					<Button component={Link} href='../teams/medictechnician'>
