@@ -89,8 +89,8 @@ export default function Technician() {
 					</Button>
 				</TextCard>
 				<TextCard>
-					Do I hear something? Better go check it out. Your access
-					code is mustard. <br />
+					Do I hear something? Better go check it out.{' '}
+					<strong>Your access code is mustard.</strong> <br />
 					<Pause ms={500} />
 					<Button component={Link} href='../teams/medictechnician'>
 						uh oh.
