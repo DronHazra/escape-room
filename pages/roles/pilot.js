@@ -42,11 +42,6 @@ export default function Pilot() {
 					Hey there! It’s Rammy once again. I take it you’re the pilot
 					of this crew?
 				</TextCard>
-				<TextCard>
-					So lately I've been <Pace getPace={() => 500}>...</Pace>{' '}
-					feeling. <Pause ms={1000} /> Scary, right? I'm a robot! Do
-					you mind if I get some things off my chest?
-				</TextCard>
 				<TextCard
 					needsInput
 					answerCallback={input_string => setClue1Value(input_string)}
