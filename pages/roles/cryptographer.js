@@ -31,7 +31,7 @@ export default function Cryptographer() {
 	const [clue2Value, setClue2Value] = useState('');
 	const correctClue2 = btoa('shooting star');
 	const [clue3Value, setClue3Value] = useState('');
-	const correctClue3 = btoa('Focus on the horizon');
+	const correctClue3 = btoa('focus on the horizon');
 	const smash = useContext(SFXContext);
 	return (
 		<>
