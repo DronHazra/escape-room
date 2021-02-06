@@ -29,7 +29,8 @@ export default function Dlul() {
 				answerCallback={input_string => setCodeValue(input_string)}
 				canProceed={codeValue === correctCode}
 			>
-				Put your new access codes in, with the pilot team first:
+				Put your new access codes in, with the pilot team first and the
+				medic team second:
 			</TextCard>
 			<TextCard
 				needsInput
