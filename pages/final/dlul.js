@@ -91,7 +91,15 @@ export default function Dlul() {
 				for future missions, brave crew members...
 			</TextCard>
 			<TextCard>
-				<Pace getPace={() => 100}>The End.</Pace>
+				<Pace getPace={() => 100}>The End.</Pace> <br />
+				Make sure to fill out the completion form:
+				<br />
+				<Button
+					href='https://forms.gle/Zu7qqXHbUqyaK4Mg7'
+					target='_blank'
+				>
+					thanks for playing:)
+				</Button>
 			</TextCard>
 		</Dialog>
 	);
