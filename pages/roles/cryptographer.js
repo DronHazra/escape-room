@@ -49,7 +49,7 @@ export default function Cryptographer() {
 					Well, I’ll keep this straight to the point today. Our
 					computer generated the following message in response to a
 					security malfunction on board. Decrypt it and you’ll be
-					given a key that lets you move on. <br />
+					given a key that lets you move on. There might be some irrelevant information that tries to throw you off.<br />
 					<Pace getPace={() => 500}>...</Pace>
 					<br />
 					Right! Almost forgot to show you the message. Here it is:
@@ -63,7 +63,7 @@ export default function Cryptographer() {
 					</Button>
 					<Pause ms={500} />
 					<br />
-					Good luck!
+					Good luck! Also note that this clue has multiple colours so ask a friend if you cannot see it.
 				</TextCard>
 				<TextCard>Well done! Your decoding skills are superb.</TextCard>
 				<TextCard

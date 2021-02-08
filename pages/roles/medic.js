@@ -136,47 +136,47 @@ export default function Medic() {
 				<TextCard>
 					Question 1! A major health risk for astronauts in space is
 					the exposure to: <br />
-					1. High-Energy Radiation <br />
-					2. Aliens <br />
-					3. Mercury <br />
-					4. Zero Gravity <br />
+					Red. High-Energy Radiation <br />
+					Blue. Aliens <br />
+					Green. Mercury <br />
+					Yellow. Zero Gravity <br />
 				</TextCard>
 				<TextCard>
 					Question 2! In space, astronauts lose approximately __% to
 					__% of their bone mass each month: <br />
-					1. 8% - 10%
+					Red. 8% - 10%
 					<br />
-					2. 1% - 2%
+					Blue. 1% - 2%
 					<br />
-					3. 0.5% - 0.75%
+					Green. 0.5% - 0.75%
 					<br />
-					4. 20% - 25%
+					Yellow. 20% - 25%
 					<br />
 				</TextCard>
 				<TextCard>
 					Question 3! Puffy face syndrome (in space) occurs because?{' '}
 					<br />
-					1. Astronauts tend to miss their families and then cry:(
+					Red. Astronauts tend to miss their families and then cry:(
 					<br />
-					2. The pores on astronauts’ skins open up due to zero
+					Blue. The pores on astronauts’ skins open up due to zero
 					gravity
 					<br />
-					3. Space food lacks nutrition and affects the way their
+					Green. Space food lacks nutrition and affects the way their
 					bodies utilize water
 					<br />
-					4. Fluids travel upwards to the head due to zero gravity
+					Yellow. Fluids travel upwards to the head due to zero gravity
 					<br />
 				</TextCard>
 				<TextCard>
 					Question 4! The first person to eat in space was?
 					<br />
-					1. John Glenn
+					Red. John Glenn
 					<br />
-					2. Yuri A. Gagarin
+					Blue. Yuri A. Gagarin
 					<br />
-					3. Niel Armstrong
+					Green. Niel Armstrong
 					<br />
-					4. Valentina V. Tereshkova
+					Yellow. Valentina V. Tereshkova
 					<br />
 				</TextCard>
 				<TextCard
@@ -207,7 +207,7 @@ export default function Medic() {
 						href='https://drive.google.com/drive/folders/1WUqarM5JHjEPF36rwTNiMdV1fRnzYgi7?usp=sharing'
 						target='_blank'
 					>
-						We have a lot of manuals.
+						We have a lot of manuals. Note that the colours of the answers are very important.
 					</Button>
 					<Pause ms={500} />
 				</TextCard>

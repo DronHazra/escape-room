@@ -73,7 +73,7 @@ export default function Index() {
 				<Pause ms={200} />
 				<br />
 				maybe they would be helpful? Make sure you know their values
-				though, I always seem to mix those up.
+				though, I always seem to mix those up. Here are a few piece of information you should know about! Aces are the highest cards and non-numerical cards should be signified by one letter.
 			</TextCard>
 			<TextCard needsInput={false}>
 				Congratulations! <Pause ms={300} /> The ship will take off in
